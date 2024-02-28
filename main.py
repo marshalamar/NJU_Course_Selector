@@ -1,4 +1,4 @@
-from DrissionPage import ChromiumPage,ChromiumOptions
+from DrissionPage import ChromiumPage
 
 page1 = ChromiumPage()
 page1.get('https://xk.nju.edu.cn/')
