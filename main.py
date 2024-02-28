@@ -11,6 +11,7 @@ page1.ele('#loginPwd').input(login_pwd)
 page1.ele('#verifyCode').input(vcode)
 
 page1.ele('#studentLoginBtn').click()
+page1.ele("确认").click()
 page1.ele('#courseBtn').click()
 page1.eles('.tab-first')[-1].click()
 
