@@ -12,11 +12,15 @@ NJU Course Selector 是一个基于 DrissionPage 实现的自动选课 python �
 
 ## 使用
 
-1. 安装相关依赖`DrissionPage`库，在终端中运行以下命令：
+1. 克隆`NJU Course Selector`至本地，在终端中运行以下命令：
+    ```
+    git clone https://github.com/marshalamar/NJU_Course_Selector.git
+    ```
+2. 安装相关依赖`DrissionPage`库，在终端中运行以下命令：
     ```
     pip install DrissionPage
     ```
-2. 运行`main.py`；
-3. 根据终端中的输入提示，输入所需信息；
-4. 等待程序进入选课部分；
-5. 看到浏览器在收藏界面无限刷新时，即代表运行成功。
+3. 运行`main.py`；
+4. 根据终端中的输入提示，输入所需信息；
+5. 等待程序进入选课部分；
+6. 看到浏览器在收藏界面无限刷新时，即代表运行成功。
