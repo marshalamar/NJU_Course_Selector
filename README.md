@@ -2,7 +2,7 @@
 
 ## 简介
 
-NJU Course Selector 是一个基于 DrissionPage 实现的自动选课 python 脚本。
+NJU Course Selector 是一个基于 DrissionPage 实现的自动选课 python 程序。
 
 主要功能包括：
 
