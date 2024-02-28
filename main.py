@@ -18,11 +18,10 @@ while True:
     page1.refresh()
     wanted_courses = page1.eles('.course-tr ')
     for wanted_course in wanted_courses:
+        print(wanted_course('.kcmc course-cell').text, wanted_course('.jsmc course-cell').text, wanted_course('.yxrs course-cell').text)
         statue = wanted_course.child(7).child().text
         if '已满' in statue:
-            wanted_course_dialog = wanted_course.texts()
-            index = [1,3,4,6] 
-            print([wanted_course_dialog[i] for i in index])
+            print("已满，尝试刷新")
         else:
             while True:
                 wanted_course.child(8).ele('选择').click()
