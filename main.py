@@ -18,6 +18,9 @@ page1.eles('.tab-first')[-1].click()
 while True:
     page1.refresh()
     wanted_courses = page1.eles('.course-tr ')
+    if not wanted_courses:
+        print("收藏列表为空，请重新检查")
+        break
     for wanted_course in wanted_courses:
         print(wanted_course('.kcmc course-cell').text, wanted_course('.jsmc course-cell').text, wanted_course('.yxrs course-cell').text)
         statue = wanted_course('.yxrs course-cell').text
