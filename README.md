@@ -10,6 +10,8 @@ NJU Course Selector 是一个基于 DrissionPage 实现的自动选课 python �
 - 自动选择收藏界面中有空余名额的课程
 - 无限刷新直至选课成功
 
+**⭐如果觉得好用的话，欢迎给个Star。**
+
 ## 使用
 
 1. 克隆`NJU Course Selector`至本地，在终端中运行以下命令：
