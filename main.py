@@ -11,7 +11,10 @@ page1.ele('#loginPwd').input(login_pwd)
 page1.ele('#verifyCode').input(vcode)
 
 page1.ele('#studentLoginBtn').click()
-page1.ele("确认").click()
+
+if page1.ele('.jqx-rc-all jqx-window jqx-popup jqx-widget jqx-widget-content'):
+    page1.ele("确认").click()
+
 page1.ele('#courseBtn').click()
 page1.eles('.tab-first')[-1].click()
 
@@ -28,11 +31,11 @@ while True:
             print("已满，尝试刷新")
         else:
             while True:
-                wanted_course.child(8).ele('选择').click()
+                wanted_course.child(8).ele('选择').click(by_js=True)
                 page1.ele('.cv-sure cvBtnFlag').wait.displayed()
                 page1.ele('.cv-sure cvBtnFlag').click()
                 dialog = page1.ele('#cvDialog').child(2).child(1)
-                if dialog.ele('失败'):
+                if "失败" in dialog.texts():
                     dialog.next().click()
                     print("选课失败")
                     break
